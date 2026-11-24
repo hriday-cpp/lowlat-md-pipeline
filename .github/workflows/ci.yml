@@ -1,0 +1,15 @@
+name: ci
+on: [push, pull_request]
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        san: ["", "asan", "tsan"]
+    steps:
+      - uses: actions/checkout@v4
+      - name: build + test
+        run: |
+          if [ "${{ matrix.san }}" = "" ]; then make test OPT="-O2";
+          elif [ "${{ matrix.san }}" = "asan" ]; then make asan;
+          else make tsan; fi

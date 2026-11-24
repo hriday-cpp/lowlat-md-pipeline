@@ -1,0 +1,6 @@
+date: 2026-11-15T10:53:23Z
+kernel: Linux 6.6.87.2-microsoft-standard-WSL2
+cpu:  Intel(R) Core(TM) Ultra 7 155H
+governor: n/a
+thp: always [madvise] never
+compiler: g++ (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0

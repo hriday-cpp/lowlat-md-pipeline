@@ -1,0 +1,4 @@
+book,mmsgs_per_s,p50_ns,p90_ns,p99_ns,p999_ns,max_ns,allocs_per_msg
+"map+list+unordered_map (baseline)",7.58648,109.955,398.79,755.897,1428.1,5.07249e+06,0.985954
+"ladder+bitmap, std::unordered_map ids",10.2675,88.9483,272.753,503.822,713.884,2.31698e+06,0.492781
+"ladder+bitmap, flat-hash ids",41.6446,60.0647,162.47,283.256,398.79,1.93616e+06,0
